@@ -43,11 +43,11 @@ public class texteServlet extends HttpServlet {
             out.println("<title>Servlet texteServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>nome:" + getParameter + "(nome)</h1>");
-            out.println("<h1>sobreNome:" + getParameter + "(sobreNome)</h1>");
-            out.println("<h1>telefone:" + getParameter + "(telefone)</h1>");
-            out.println("<h1>Endereço:" + getParameter + "(Endereço)</h1>");
-            out.println("<h1>Cidade:" + getParameter + "(Cidade)</h1>");
+            out.println("<h1>nome:" + request.getParameter(getParameter) + "(nome)</h1>");
+            out.println("<h1>sobreNome:" + request.getParameter(getParameter) + "(sobreNome)</h1>");
+            out.println("<h1>telefone:" + request.getParameter(getParameter) + "(telefone)</h1>");
+            out.println("<h1>Endereço:" + request.getParameter(getParameter) + "(Endereço)</h1>");
+            out.println("<h1>Cidade:" + request.getParameter(getParameter) + "(Cidade)</h1>");
             out.println("<h1>Servlet texteServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
